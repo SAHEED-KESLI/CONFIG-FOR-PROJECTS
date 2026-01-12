@@ -1,0 +1,7 @@
+npm run prepare
+npx husky add .husky/pre-commit "npm run validate"
+
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run validate

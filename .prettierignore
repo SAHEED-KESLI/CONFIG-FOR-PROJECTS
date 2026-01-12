@@ -1,0 +1,16 @@
+node_modules
+.next
+dist
+build
+coverage
+target
+.vscode
+.env
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.next
+out
+build
+node_modules
+bun.lockb

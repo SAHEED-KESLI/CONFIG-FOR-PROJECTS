@@ -1,0 +1,3 @@
+
+
+bun add -D prettier eslint-config-prettier husky && bunx husky init
