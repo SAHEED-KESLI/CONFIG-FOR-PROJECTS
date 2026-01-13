@@ -1,3 +1,15 @@
+// import { defineConfig, globalIgnores } from "eslint/config";
+// import nextVitals from "eslint-config-next/core-web-vitals";
+// import nextTs from "eslint-config-next/typescript";
+// import prettier from "eslint-config-prettier";
+
+// export default defineConfig([
+//   ...nextVitals,
+//   ...nextTs,
+//   prettier, // Disables ALL formatting rules (Prettier owns formatting)
+//   globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts"]),
+// ]);
+
 // eslint.config.mjs (React / Vite)
 import js from "@eslint/js";
 import react from "eslint-plugin-react";
@@ -29,9 +41,5 @@ export default defineConfig([
 
   prettier,
 
-  globalIgnores([
-    "node_modules/**",
-    "dist/**",
-    "build/**",
-  ]),
+  globalIgnores(["node_modules/**", "dist/**", "build/**"]),
 ]);
